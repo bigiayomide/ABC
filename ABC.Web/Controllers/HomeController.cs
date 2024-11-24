@@ -27,7 +27,7 @@ namespace ABC.Web.Controllers
         public IActionResult Index()
         {
             var preface = _mapper.Map<Section>(_contentService.GetPreface());
-            if (_contentService.IsPrefaceExist())
+            if (_contentService.IsLinkingComplete())
             {
                 return RedirectToAction("Index", "Section", "preface");
             }

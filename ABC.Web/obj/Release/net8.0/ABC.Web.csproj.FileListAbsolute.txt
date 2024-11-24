@@ -36,3 +36,4 @@ C:\Users\SIBALO-HOME\source\repos\ABCPublishing\ABC.Web\bin\Release\net8.0\NLog.
 C:\Users\SIBALO-HOME\source\repos\ABCPublishing\ABC.Web\bin\Release\net8.0\NLog.dll
 C:\Users\SIBALO-HOME\source\repos\ABCPublishing\ABC.Web\bin\Release\net8.0\NLog.Extensions.Logging.dll
 C:\Users\SIBALO-HOME\source\repos\ABCPublishing\ABC.Web\bin\Release\net8.0\NLog.Web.AspNetCore.dll
+C:\Users\SIBALO-HOME\source\repos\ABCPublishing\ABC.Web\obj\Release\net8.0\ABC.Web.sourcelink.json
