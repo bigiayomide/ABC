@@ -1,11 +1,11 @@
-﻿@model ABC.Web.Models.Section
+﻿@model Section
 <h1>@Model.Title</h1>
-@foreach(var content in Model.Content)
+@foreach (var content in Model.Content)
 {
     <p>@content</p>
 }
 <div class="navigations-parent">
-    @foreach(var content in Model.Navigation)
+    @foreach (var content in Model.Navigation)
     {
         <a asp-action="ToSection" asp-controller="Section" asp-route-section="@content.Section">@content.Text</a>
     }

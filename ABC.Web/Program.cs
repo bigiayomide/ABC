@@ -4,7 +4,6 @@ using ABC.Web.Services.Implementations;
 using ABC.Web.Services.Interfaces;
 using NLog;
 using NLog.Web;
-using System.Reflection.Metadata;
 
 var logger = NLogBuilder.ConfigureNLog("NLog.config").GetCurrentClassLogger();
 try
@@ -50,12 +49,12 @@ try
     app.UseMiddleware<ErrorHandlingMiddleware>();
 
     app.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}");
+        "default",
+        "{controller=Home}/{action=Index}/{id?}");
 
     app.Run();
 }
-catch(Exception ex)
+catch (Exception ex)
 {
     logger.Error(ex, "Application stopped due to an exception");
     throw;
@@ -63,4 +62,11 @@ catch(Exception ex)
 finally
 {
     LogManager.Shutdown();
+}
+
+namespace ABC.Web
+{
+    public class Program
+    {
+    }
 }

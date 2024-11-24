@@ -1,4 +1,5 @@
-﻿namespace ABC.Web.Models
+﻿namespace ABC.Web.Models;
+
+public class Preface : Section
 {
-    public class Preface : Section {}
 }

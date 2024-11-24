@@ -1,10 +1,9 @@
-﻿namespace ABC.Web.Models.Profile
+﻿namespace ABC.Web.Models.Profile;
+
+public class ContentMappingProfile : AutoMapper.Profile
 {
-    public class ContentMappingProfile : AutoMapper.Profile
+    public ContentMappingProfile()
     {
-        public ContentMappingProfile()
-        {
-            CreateMap<Section, Preface>().ReverseMap();
-        }
+        CreateMap<Section, Preface>().ReverseMap();
     }
 }

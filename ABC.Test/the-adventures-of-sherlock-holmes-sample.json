@@ -1,0 +1,105 @@
+{
+  "preface": {
+    "title": "Preface",
+    "content": [
+    ],
+    "navigation": [
+      {
+        "text": "Table of Contents",
+        "section": "table-of-contents"
+      }
+    ]
+  },
+  "table-of-contents": {
+    "title": "The Adventures of Sherlock Holmes",
+    "content": [
+    ],
+    "navigation": [
+      {
+        "text": "A Scandal in Bohemia",
+        "section": "a-scandal-in-bohemia"
+      },
+      {
+        "text": "The Red-Headed League",
+        "section": "the-red-headed-league"
+      },
+      {
+        "text": "Return to Preface",
+        "section": "preface"
+      }
+    ]
+  },
+  "a-scandal-in-bohemia": {
+    "title": "A Scandal in Bohemia",
+    "content": [
+      "Chapter I",
+      "Chapter II",
+      "Chapter III"
+    ],
+    "navigation": [
+      {
+        "text": "Chapter I",
+        "section": "bohemia-chapter-1"
+      },
+      {
+        "text": "Chapter II",
+        "section": "bohemia-chapter-2"
+      },
+      {
+        "text": "Chapter III",
+        "section": "bohemia-chapter-3"
+      },
+      {
+        "text": "Return to Table of Contents",
+        "section": "table-of-contents"
+      }
+    ]
+  },
+  "bohemia-chapter-1": {
+    "title": "Chapter I",
+    "content": [
+      "To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer--excellent for drawing the veil from men's motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.",
+      "..."
+    ],
+    "navigation": [
+      {
+        "text": "Chapter II",
+        "section": "bohemia-chapter-2"
+      }
+    ]
+  },
+  "bohemia-chapter-2": {
+    "title": "Chapter II",
+    "content": [
+      "At three o'clock precisely I was at Baker Street, but Holmes had not yet returned. The landlady informed me that he had left the house shortly after eight o'clock in the morning. I sat down beside the fire, however, with the intention of awaiting him, however long he might be. I was already deeply interested in his inquiry, for, though it was surrounded by none of the grim and strange features which were associated with the two crimes which I have already recorded, still, the nature of the case and the exalted station of his client gave it a character of its own. Indeed, apart from the nature of the investigation which my friend had on hand, there was something in his masterly grasp of a situation, and his keen, incisive reasoning, which made it a pleasure to me to study his system of work, and to follow the quick, subtle methods by which he disentangled the most inextricable mysteries. So accustomed was I to his invariable success that the very possibility of his failing had ceased to enter into my head.",
+      "..."
+    ],
+    "navigation": [
+      {
+        "text": "Chapter III",
+        "section": "bohemia-chapter-3"
+      },
+      {
+        "text": "Return to Chapter I",
+        "section": "bohemia-chapter-1"
+      }
+    ]
+  },
+  "bohemia-chapter-3": {
+    "title": "Chapter III",
+    "content": [
+      "I slept at Baker Street that night, and we were engaged upon our toast and coffee in the morning when the King of Bohemia rushed into the room.",
+      "..."
+    ],
+    "navigation": [
+      {
+        "text": "Return to Chapter II",
+        "section": "bohemia-chapter-2"
+      },
+      {
+        "text": "Return to Table of Contents",
+        "section": "table-of-contents"
+      }
+    ]
+  }
+}

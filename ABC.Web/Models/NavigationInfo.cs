@@ -1,8 +1,7 @@
-﻿namespace ABC.Web.Models
+﻿namespace ABC.Web.Models;
+
+public class NavigationInfo
 {
-    public class NavigationInfo
-    {
-        public string Text { get; set; }
-        public string Section { get; set; }
-    }
+    public string Text { get; set; }
+    public string Section { get; set; }
 }
