@@ -6,7 +6,7 @@ namespace ABC.Web.Services.Interfaces
     public interface IContentService
     {
         bool IsLinkingComplete();
-        Preface GetPreface();
+        Section GetPreface();
         Section GetSection(string propertyName);
     }
 }

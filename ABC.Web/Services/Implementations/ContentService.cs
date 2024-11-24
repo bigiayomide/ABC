@@ -14,94 +14,107 @@ namespace ABC.Web.Services.Implementations
     public class ContentService : IContentService
     {
         private readonly JObject _contentObject;
-        private readonly IMapper _mapper;
         private readonly ILogger<ContentService> _logger;
-        private HashSet<string> _visited;
-        public ContentService(IWebHostEnvironment env, IMapper mapper, ILogger<ContentService> logger) 
+        public ContentService(IWebHostEnvironment env, ILogger<ContentService> logger)
         {
-            _mapper = mapper;
             _logger = logger;
             string folderPath = env.WebRootPath + "\\content";
             try
             {
                 string[] jsonFiles = Directory.GetFiles(folderPath, "*.json");
-                if(jsonFiles != null)
+                if (jsonFiles == null || jsonFiles.Length == 0)
                 {
-                    string contentString = File.ReadAllText(jsonFiles[0]);
-                    _contentObject = JObject.Parse(contentString);
+                    throw new FileNotFoundException("No JSON content files found in the content directory.");
                 }
+                string contentString = File.ReadAllText(jsonFiles[0]);
+                _contentObject = JObject.Parse(contentString);
+            }
+            catch (FileNotFoundException ex)
+            {
+                throw new FileNotFoundException("No JSON content files found in the content directory.");
             }
             catch (Exception ex)
             {
-                _logger.LogError($"An error occurred: {ex.Message}");
+                _logger.LogError($"An error occurred while loading the content JSON file: {ex.Message}");
+                throw;
             }
-            _visited = new();
         }
 
         private JObject GetJsonObject()
         {
+            if (_contentObject == null)
+            {
+                throw new InvalidOperationException("Content JSON is not loaded.");
+            }
             return _contentObject;
         }
 
-        public Preface GetPreface()
+        public Section GetPreface()
         {
-            if (!IsPrefaceExist()) return null;
-            Preface preface = _mapper.Map<Preface>(GetSection("preface"));
+            if (!IsSectionExist("preface"))
+            {
+                _logger.LogWarning("Preface section not found in the content.");
+                return null;
+            }
+            Section preface = GetSection("preface");
             return preface;
         }
-
-        private bool IsPrefaceExist()
+        private bool IsSectionExist(string sectionName)
         {
-            return GetJsonObject().Properties().Any(p => string.Equals(p.Name, "preface", StringComparison.OrdinalIgnoreCase));
+            return GetJsonObject().Properties().Any(p => string.Equals(p.Name, sectionName, StringComparison.OrdinalIgnoreCase));
         }
 
-        public Section GetSection(string propertyName)
+        public Section GetSection(string sectionName)
         {
-            if (GetJsonObject() is JObject obj)
+            JObject jsonObject = GetJsonObject();
+            if (jsonObject.TryGetValue(sectionName, StringComparison.OrdinalIgnoreCase, out JToken property))
             {
-                if (obj.TryGetValue(propertyName, out JToken property))
-                {
-                    return property.ToObject<Section>();
-                }
+                return property.ToObject<Section>();
             }
+            _logger.LogWarning($"Section '{sectionName}' not found in the content.");
             return null;
         }
 
         public bool IsLinkingComplete()
         {
-            return ValidateNavigation(GetJsonObject(), "preface");
+            try
+            {
+                return ValidateNavigation(GetJsonObject(), "preface");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred during navigation validation.");
+                return false;
+            }
         }
 
         private bool ValidateNavigation(JObject sections, string currentSection = "preface", HashSet<string> visited = null)
         {
-            // Initialize the visited set to detect circular references
-            visited ??= new HashSet<string>();
+            visited ??= new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
-            // If we've already visited this section, skip to avoid infinite loops
             if (visited.Contains(currentSection))
                 return true;
 
-            // Add the current section to the visited set
             visited.Add(currentSection);
 
-            // Check if the current section exists in the dictionary
-            if (!sections.ContainsKey(currentSection))
+            if (!sections.TryGetValue(currentSection, StringComparison.OrdinalIgnoreCase, out JToken sectionToken))
+            {
+                _logger.LogWarning($"Section '{currentSection}' does not exist in the content.");
                 return false;
+            }
 
-            // Get the current section's navigation
             var navigation = sections[currentSection].ToObject<Section>().Navigation;
 
-            // Recursively validate all linked sections
             foreach (var navItem in navigation)
             {
                 if (!sections.ContainsKey(navItem.Section) || !ValidateNavigation(sections, navItem.Section, visited))
+                {
+                    _logger.LogWarning($"Navigation link to section '{navItem.Section}' is invalid.");
                     return false;
+                }
             }
 
-            // All links are valid
             return true;
         }
-
-
     }
 }

@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F7C530D8-79EA-447D-A573-BA66D568CF49}|ABC.Test\\ABC.Test.csproj|c:\\users\\sibalo-home\\source\\repos\\abcpublishing\\abc.test\\contentservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7C530D8-79EA-447D-A573-BA66D568CF49}|ABC.Test\\ABC.Test.csproj|solutionrelative:abc.test\\contentservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D832653F-FB56-4F88-BD00-06C13AF5BB01}|ABC.Web\\ABC.Web.csproj|c:\\users\\sibalo-home\\source\\repos\\abcpublishing\\abc.web\\services\\implementations\\contentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D832653F-FB56-4F88-BD00-06C13AF5BB01}|ABC.Web\\ABC.Web.csproj|solutionrelative:abc.web\\services\\implementations\\contentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D832653F-FB56-4F88-BD00-06C13AF5BB01}|ABC.Web\\ABC.Web.csproj|c:\\users\\sibalo-home\\source\\repos\\abcpublishing\\abc.web\\models\\section.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D832653F-FB56-4F88-BD00-06C13AF5BB01}|ABC.Web\\ABC.Web.csproj|solutionrelative:abc.web\\models\\section.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7C530D8-79EA-447D-A573-BA66D568CF49}|ABC.Test\\ABC.Test.csproj|c:\\users\\sibalo-home\\source\\repos\\abcpublishing\\abc.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7C530D8-79EA-447D-A573-BA66D568CF49}|ABC.Test\\ABC.Test.csproj|solutionrelative:abc.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D832653F-FB56-4F88-BD00-06C13AF5BB01}|ABC.Web\\ABC.Web.csproj|c:\\users\\sibalo-home\\source\\repos\\abcpublishing\\abc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D832653F-FB56-4F88-BD00-06C13AF5BB01}|ABC.Web\\ABC.Web.csproj|solutionrelative:abc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D832653F-FB56-4F88-BD00-06C13AF5BB01}|ABC.Web\\ABC.Web.csproj|c:\\users\\sibalo-home\\source\\repos\\abcpublishing\\abc.web\\controllers\\sectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D832653F-FB56-4F88-BD00-06C13AF5BB01}|ABC.Web\\ABC.Web.csproj|solutionrelative:abc.web\\controllers\\sectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D832653F-FB56-4F88-BD00-06C13AF5BB01}|ABC.Web\\ABC.Web.csproj|c:\\users\\sibalo-home\\source\\repos\\abcpublishing\\abc.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D832653F-FB56-4F88-BD00-06C13AF5BB01}|ABC.Web\\ABC.Web.csproj|solutionrelative:abc.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D832653F-FB56-4F88-BD00-06C13AF5BB01}|ABC.Web\\ABC.Web.csproj|c:\\users\\sibalo-home\\source\\repos\\abcpublishing\\abc.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D832653F-FB56-4F88-BD00-06C13AF5BB01}|ABC.Web\\ABC.Web.csproj|solutionrelative:abc.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,50 +50,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ContentService.cs",
               "DocumentMoniker": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Web\\Services\\Implementations\\ContentService.cs",
               "RelativeDocumentMoniker": "ABC.Web\\Services\\Implementations\\ContentService.cs",
               "ToolTip": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Web\\Services\\Implementations\\ContentService.cs",
               "RelativeToolTip": "ABC.Web\\Services\\Implementations\\ContentService.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAMwEoAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T13:28:25.162Z",
+              "WhenOpened": "2024-11-24T21:28:10.404Z",
               "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "d2120556-2f9b-48fe-af36-a37138b671c8",
-        "Display": 0,
-        "X": -5,
-        "Y": 0,
-        "Width": 761,
-        "Height": 725,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Section.cs",
-              "DocumentMoniker": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Web\\Models\\Section.cs",
-              "RelativeDocumentMoniker": "ABC.Web\\Models\\Section.cs",
-              "ToolTip": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Web\\Models\\Section.cs",
-              "RelativeToolTip": "ABC.Web\\Models\\Section.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "DocumentIndex": 0,
+              "Title": "ContentServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Test\\ContentServiceTests.cs",
+              "RelativeDocumentMoniker": "ABC.Test\\ContentServiceTests.cs",
+              "ToolTip": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Test\\ContentServiceTests.cs",
+              "RelativeToolTip": "ABC.Test\\ContentServiceTests.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAQwA8AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T13:57:53.944Z",
+              "WhenOpened": "2024-11-24T21:27:44.125Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Test\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "ABC.Test\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Test\\UnitTest1.cs",
+              "RelativeToolTip": "ABC.Test\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T21:27:17.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SectionController.cs",
+              "DocumentMoniker": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Web\\Controllers\\SectionController.cs",
+              "RelativeDocumentMoniker": "ABC.Web\\Controllers\\SectionController.cs",
+              "ToolTip": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Web\\Controllers\\SectionController.cs",
+              "RelativeToolTip": "ABC.Web\\Controllers\\SectionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T12:06:59.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Web\\Program.cs",
+              "RelativeDocumentMoniker": "ABC.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Web\\Program.cs",
+              "RelativeToolTip": "ABC.Web\\Program.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:31:39.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ABC.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ABC.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwBwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:30:40.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ABC.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\SIBALO-HOME\\source\\repos\\ABCPublishing\\ABC.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ABC.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T11:30:37.132Z"
             }
           ]
         }
